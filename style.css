@@ -14,8 +14,23 @@
     width: 100%;
   }
 }
+@keyframes animacion {
+  from {
+    transform: translateX(0%);
+  }
 
+  to {
+    transform: translateY(70%);
+  }
+}
 .menubetis {
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--verdebetis);
   color: white;
   padding: 10px;
@@ -76,19 +91,19 @@
   color: #fff;
 }
 
-body {
-  background-color: white;
-}
-
 .noticias,
-.clasificacion,.formulario,.historia{
+.clasificacion,
+.formulario,
+.historia,
+.galeria_escudos,
+.titulos,
+.himno {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   padding: 20px; /* Ajusta el valor de padding según tus necesidades */
   background-color: var(--verdebetis);
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 /* pone un ancho maximo y la centra */
 .noticias img {
@@ -109,8 +124,27 @@ header.titulo_noticias {
   margin: 20px auto;
   font-family: Arial, sans-serif;
 }
-
+@keyframes anim2 {
+    0% {
+      background-color: rgb(22, 88, 203);
+    }
+    25% {
+      background-color: rgb(204, 200, 196);
+    }
+    50% {
+      background-color: #ad19d5;
+    }
+    75% {
+      background-color: rgb(83, 20, 232);
+    }
+    100% {
+      background-color: rgb(134, 169, 124);
+    }
+  }
 .clasificacion table {
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   border-collapse: collapse;
   width: 100%;
 }
@@ -143,76 +177,213 @@ header.titulo_noticias {
   color: #d00000;
 }
 
-
 .formulario {
-    margin: 20px auto;
-    max-width: 600px;
-    font-family: Arial, sans-serif;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  input[type="date"] {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  input[type="submit"],
-  input[type="reset"] {
-    display: inline-block;
-    background-color: #0077c0;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover,
-  input[type="reset"]:hover {
-    background-color: #005b96;
-  }
-  
-  input[type="submit"]:focus,
-  input[type="reset"]:focus {
-    outline: none;
-    box-shadow: 0 0 5px #0077c0;
-  }
-  
-  .reset {
-    margin-right: 10px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
 
-  .historia strong{
-    text-align: center;
-    font-size: 3em;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form .reset:hover,
+form .send:hover {
+  background-color: #ad71ba;
+  color: #fff;
+
+  display: inline-block;
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  background-color: #0077c0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #005b96;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0077c0;
+}
+@keyframes anim {
+  0% {
+    background-color: rgb(103, 134, 189);
   }
+  25% {
+    background-color: rgb(199, 180, 158);
+  }
+  50% {
+    background-color: #000;
+  }
+  75% {
+    background-color: #f80;
+  }
+  100% {
+    background-color: rgb(134, 169, 124);
+  }
+}
+input:hover {
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.reset {
+  margin-right: 10px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.historia strong {
+  text-align: center;
+  font-size: 3em;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1;
+  height: 250px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+table.titulos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table.titulos thead {
+  background-color: #e8e8e8;
+  font-weight: bold;
+}
+
+table.titulos th,
+table.titulos td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+table.titulos tr:hover {
+  background-color: #f5f5f5;
+}
+
+table.titulos td:first-child {
+  font-weight: bold;
+}
+
+table.titulos td:nth-child(2) {
+  text-align: center;
+}
+
+table.titulos td:nth-child(3) {
+  text-align: center;
+}
+
+.contenido {
+  margin-top: 10em;
+}
+
+.himno p {
+  text-align: center;
+}
+@keyframes animacion2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+}
+.himno:hover {
+  animation-name: animacion2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.gallery-item2 {
+  position: relative;
+  flex: 1;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.gallery-item2 img {
+  width: 100%;
+  object-fit: cover;
+}
