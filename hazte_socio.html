@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+
+  
+    <nav class="menubetis">
+      <!-- Logo del Betis -->
+      <a href="pagina_inicial.html"
+        ><img src="imagenes/22618.jpg" alt="Logo del Betis"
+      /></a>
+      <!-- Menu superior -->
+      <ul>
+        <li>
+          <a href="#">Historia del club</a>
+          <ul>
+            <li><a href="historia.html">Fundacion</a></li>
+            <li><a href="#">Titulos</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Primer equipo</a>
+          <ul>
+            <li><a href="#">Galeria jugadores</a></li>
+            <li><a href="#">Estadisticas</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Calendario Partidos</a></li>
+
+        <li><a href="hazte_socio.html">Hazte socio</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- el formulario -->
+    <section class="formulario">
+      <form action="#" target="" method="post" name="formEx12">
+        <div>
+          <label for="Usuario">Usuario</label>
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="Escribe tu usuario"
+          />
+        </div>
+        <div>
+          <label for="contraseÃ±a">contrasenya</label>
+          <input
+            type="password"
+            name="contraseÃ±a"
+            id="contrasenya"
+            placeholder="Pon la contrasenya"
+          />
+        </div>
+        <div>
+          <label for="email">email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe el correo"
+          />
+        </div>
+        <div>
+          <label for="Fecha de nacimiento">fecha de nacimiento</label>
+          <input type="date" value="2017-06-01" max="2023-06-01" />
+        </div>
+        <div>
+          Pais
+          <select name="Pais">
+            <option value="1">Espanya</option>
+            <option value="2" selected>Portugal</option>
+
+            <option value="3">Francia</option>
+          </select>
+        </div>
+
+        <div><input type="reset" class="reset" value="Reset" /></div>
+        <div><input type="submit" class="send" value="Send" /></div>
+      </form>
+    </section>
+    <div class="pie">
+      <p>© REAL BETIS BALOMPIE</p>
+    </div>
+  </body>
+</html>

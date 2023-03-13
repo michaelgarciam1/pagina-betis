@@ -1,0 +1,218 @@
+/* El verde del real betis*/
+:root {
+  --verdebetis: #0bb363;
+}
+
+/* media querys */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+.menubetis {
+  background-color: var(--verdebetis);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menubetis img {
+  height: 80px;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+.menubetis ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menubetis li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menubetis li:hover > ul {
+  display: block;
+}
+
+.menubetis a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.menubetis ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--verdebetis);
+  border: 1px solid black;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menubetis ul ul li {
+  margin-right: 0;
+  width: 200px;
+}
+
+.menubetis ul ul a {
+  padding: 10px;
+}
+.menubetis ul li a:hover {
+  background-color: #217127;
+  color: #fff;
+}
+
+body {
+  background-color: white;
+}
+
+.noticias,
+.clasificacion,.formulario,.historia{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px; /* Ajusta el valor de padding según tus necesidades */
+  background-color: var(--verdebetis);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+/* pone un ancho maximo y la centra */
+.noticias img {
+  height: 200px;
+  margin-right: 10px;
+  display: block;
+  margin: 0 auto;
+}
+header.titulo_noticias {
+  font-size: 3em;
+}
+.titulo_noticias {
+  margin-top: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+.clasificacion {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.clasificacion table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.clasificacion th,
+.clasificacion td {
+  text-align: left;
+  padding: 8px;
+}
+
+.clasificacion thead {
+  background-color: #ddd;
+}
+
+.clasificacion tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.clasificacion td:first-child {
+  font-weight: bold;
+}
+
+.clasificacion td:nth-child(2) {
+  font-weight: bold;
+  color: #000000;
+}
+
+.clasificacion td:last-child {
+  font-weight: bold;
+  color: #d00000;
+}
+
+
+.formulario {
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="date"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    display: inline-block;
+    background-color: #0077c0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #005b96;
+  }
+  
+  input[type="submit"]:focus,
+  input[type="reset"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0077c0;
+  }
+  
+  .reset {
+    margin-right: 10px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+
+  .historia strong{
+    text-align: center;
+    font-size: 3em;
+  }
