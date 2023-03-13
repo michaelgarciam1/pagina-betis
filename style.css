@@ -14,6 +14,16 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+/* animacion que va hacia abajo */
 @keyframes animacion {
   from {
     transform: translateX(0%);
@@ -23,6 +33,18 @@
     transform: translateY(70%);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo del menu  */
 .menubetis {
   animation-name: animacion;
   animation-duration: 3s;
@@ -92,6 +114,16 @@
   color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
+/* estilo de donde reside el contenido */
 .noticias,
 .clasificacion,
 .formulario,
@@ -107,6 +139,7 @@
   margin-bottom: 30px;
 }
 /* pone un ancho maximo y la centra */
+/* estilo de las noticias de la pagina principal */
 .noticias img {
   height: 200px;
   margin-right: 10px;
@@ -121,6 +154,14 @@ header.titulo_noticias {
   font-size: 2em;
   text-align: center;
 }
+
+
+
+
+
+
+
+/* estilo de la clasificacion */
 .clasificacion {
   margin: 20px auto;
   font-family: Arial, sans-serif;
@@ -141,7 +182,7 @@ header.titulo_noticias {
     100% {
       background-color: rgb(134, 169, 124);
     }
-  }
+  } /* estilo de las tabla donde hay una animacion que va cambiando de color */
 .clasificacion table {
     animation-name: anim2;
     animation-duration: 3s;
@@ -178,6 +219,13 @@ header.titulo_noticias {
   color: #d00000;
 }
 
+
+
+
+
+
+
+/* EStilo del formulario */
 .formulario {
   margin: 20px auto;
   max-width: 600px;
@@ -190,6 +238,11 @@ label {
   font-weight: bold;
 }
 
+
+
+
+
+/*Estilo de los inputs */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -264,6 +317,7 @@ input[type="reset"]:focus {
     background-color: rgb(134, 169, 124);
   }
 }
+/* animacion que va cambiando el color si esta el raton encima */
 input:hover {
   animation-name: anim;
   animation-duration: 5s;
@@ -273,15 +327,26 @@ input:hover {
   margin-right: 10px;
 }
 
+
+
+
+
+
+/* un marge al div para que el menu principal no moleste */
 div {
   margin-bottom: 10px;
 }
 
+
+
+
+
+/* estilos de la pagina de historia */
 .historia strong {
   text-align: center;
   font-size: 3em;
 }
-
+/* estilos de la galeria con object-fit */
 .gallery-container {
   display: flex;
   justify-content: center;
@@ -322,6 +387,10 @@ div {
   text-align: center;
 }
 
+
+
+
+/* estilo de la tabla de titulos */
 table.titulos {
   width: 100%;
   border-collapse: collapse;
@@ -360,6 +429,11 @@ table.titulos td:nth-child(3) {
   margin-top: 10em;
 }
 
+
+
+
+
+/* estilo de la pagina de los himnos*/
 .himno p {
   text-align: center;
 }
@@ -371,12 +445,17 @@ table.titulos td:nth-child(3) {
     transform: translateX(-200px);
   }
 }
+/* pone una animacion cuando pasa el raton sobre el section de los videos */
 .himno:hover {
   animation-name: animacion2;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
+
+
+
+/* cambios especificos para la galeria de jugadores */
 .gallery-item2 {
   position: relative;
   flex: 1;
