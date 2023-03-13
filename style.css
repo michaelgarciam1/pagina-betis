@@ -36,6 +36,7 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .menubetis img {
